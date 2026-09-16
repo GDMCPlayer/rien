@@ -1,0 +1,18 @@
+{
+  "name": "rien",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^2.6.1",
+    "discord-api-types": "^0.38.49",
+    "discord.js": "^14.26.4",
+    "dotenv": "^17.4.2"
+  }
+}
