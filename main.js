@@ -6,7 +6,6 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBit
 const token = process.env.TOKEN;
 const clientId = process.env.ID;
 
-// Commandes globales
 const commands = [
   {
     name: 'rien',
@@ -22,7 +21,7 @@ const rest = new REST({ version: '10' }).setToken(token);
   try {
     console.log('Enregistrement des commandes globales...');
     await rest.put(
-      Routes.applicationCommands(clientId), // Commandes globales
+      Routes.applicationCommands(clientId),
       { body: commands },
     );
     console.log('Commandes globales enregistrées avec succès !');
@@ -31,7 +30,6 @@ const rest = new REST({ version: '10' }).setToken(token);
   }
 })();
 
-// Gestion des interactions
 client.on('interactionCreate', async interaction => {
   if (!interaction.isChatInputCommand()) return;
 
@@ -46,10 +44,9 @@ client.on('ready', () => {
   console.log(`Connecté en tant que ${client.user.tag}`);
 });
 
-// Détection du mot "rien"
 client.on('messageCreate', message => {
   if (message.author.bot) return;
-  if (/r[i1]en[s]?/i.test(message.content)) {
+  if (/r[i1]en[s]?/i.test(message.content) || '** **' || '_ _') {
     message.reply('** **');
   }
 });
