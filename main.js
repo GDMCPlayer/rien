@@ -15,7 +15,6 @@ const commands = [
   },
 ];
 
-// Enregistrement des commandes globales
 const rest = new REST({ version: '10' }).setToken(token);
 (async () => {
   try {
@@ -46,7 +45,7 @@ client.on('ready', () => {
 
 client.on('messageCreate', message => {
   if (message.author.bot) return;
-  if (/r[i1]en[s]?/i.test(message.content) || '** **' || '_ _') {
+  if (/r[i1]en[s]?/i.test(message.content) || message.content == '** **' || message.content == '_ _') {
     message.reply('** **');
   }
 });
