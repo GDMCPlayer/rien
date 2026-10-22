@@ -1,6 +1,6 @@
 # Contribué à Rien(tu contribues litteralement à rien)
 
-Vous pouvez contribuer a Rien(je parle du projet pas de rien au sens propre), en faisant une Pull Request, sur le dépot [Forgejo](https://git.gdmcplayer.top/GDMCPlayer/rien) (j'essaye de calculer la connerie que je viens de dire car mon instance Forgejo est privée...)
+Vous pouvez contribuer a Rien(je parle du projet pas de rien au sens propre), en faisant une Pull Request, ~~sur le dépot [Forgejo](https://git.gdmcplayer.top/GDMCPlayer/rien) (j'essaye de calculer la connerie que je viens de dire car mon instance Forgejo est privée...)~~ sur le dépot Github(bon je vais juste me faire chier a devoir merge les modif moi meme vu que forgejo push uniquement et pull pas donc ca ecrase ouais c'est bien fait)
 
 ## Nom du commit
 
